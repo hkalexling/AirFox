@@ -1,0 +1,35 @@
+{
+  "manifest_version": 2,
+  "name": "AirFox",
+  "version": "1.0",
+
+  "description": "Share Firefox Tabs with the Native Sharing Sheet on macOS",
+
+  "background": {
+    "scripts": ["background.js"]
+  },
+
+  "permissions": ["activeTab", "storage", "notifications"],
+
+  "options_ui": {
+    "page": "options.html"
+  },
+
+  "commands": {
+    "_execute_browser_action": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+S"
+      }
+    }
+  },
+
+  "browser_action": {
+    "default_icon": {
+      "16": "icons/page-16.png",
+      "32": "icons/page-32.png"
+    },
+    "default_title": "AirFox",
+    "default_popup": "pop.html"
+  }
+
+}
