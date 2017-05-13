@@ -1,5 +1,7 @@
 # AirFox
 
+![](https://github.com/hkalexling/AirFox/raw/master/mac/AirFox/Assets.xcassets/AppIcon.appiconset/mac-icon%40128.png)
+
 AirFox is a Firfox addon & a native macOS app, allowing you to share tabs in Firefox using the native share menu in macOS
 
 ### Usage:
