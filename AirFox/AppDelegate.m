@@ -22,7 +22,7 @@
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
 	item = [[NSStatusBar systemStatusBar] statusItemWithLength:NSSquareStatusItemLength];
-	item.button.image = nil;
+	item.button.image = [NSImage imageNamed:@"status"];
 	
 	NSMenu *menu = [NSMenu new];
 	portItem = [[NSMenuItem alloc] initWithTitle:@"Port: " action:nil keyEquivalent:@""];
@@ -71,7 +71,7 @@
 	NSURL *URL = [NSURL URLWithString:URLString];
 	if (!URL) return;
 	NSSharingServicePicker *picker = [[NSSharingServicePicker alloc] initWithItems:@[URL]];
-	[picker showRelativeToRect:item.button.bounds ofView:item.button preferredEdge:NSRectEdgeMaxY];
+	[picker showRelativeToRect:NSZeroRect ofView:item.button preferredEdge:NSRectEdgeMaxY];
 }
 
 @end

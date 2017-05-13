@@ -7,7 +7,7 @@
 //
 
 #import "AFHTTPConnection.h"
-#import "HTTPErrorResponse.h"
+#import "AFHTTPResponse.h"
 #import <CocoaHTTPServer/HTTPDataResponse.h>
 #import "NSArray+QueryItemValue.h"
 #import <CocoaHTTPServer/HTTPMessage.h>
@@ -24,13 +24,13 @@
 		NSArray *queryItems = components.queryItems;
 		NSString *URLString = [queryItems queryItemValueForKey:@"url"];
 		
-		if (!URLString) return [[HTTPErrorResponse alloc] initWithErrorCode:400];
+		if (!URLString) return [AFHTTPResponse responseWithStatusCode:400];
 		
 		dispatch_async(dispatch_get_main_queue(), ^{
 			[(AppDelegate *)[NSApplication sharedApplication].delegate share:URLString];
 		});
 		
-		return [[HTTPErrorResponse alloc] initWithErrorCode:200];
+		return [AFHTTPResponse responseWithStatusCode:200];
 	}
 	
 	return [super httpResponseForMethod:method URI:path];

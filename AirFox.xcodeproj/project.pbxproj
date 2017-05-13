@@ -14,6 +14,7 @@
 		710C10561EC4B9320095BBF6 /* AFHTTPConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 710C10551EC4B9320095BBF6 /* AFHTTPConnection.m */; };
 		710C105C1EC4C0C90095BBF6 /* NSArray+QueryItemValue.m in Sources */ = {isa = PBXBuildFile; fileRef = 710C105B1EC4C0C90095BBF6 /* NSArray+QueryItemValue.m */; };
 		710C105F1EC4C4690095BBF6 /* HTTPErrorResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 710C105E1EC4C4690095BBF6 /* HTTPErrorResponse.m */; };
+		710C10621EC64A890095BBF6 /* AFHTTPResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 710C10611EC64A890095BBF6 /* AFHTTPResponse.m */; };
 		CB6530480DCE7421C1431088 /* libPods-AirFox.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 963DB9886C4E98D72D4D2561 /* libPods-AirFox.a */; };
 /* End PBXBuildFile section */
 
@@ -32,6 +33,8 @@
 		710C105B1EC4C0C90095BBF6 /* NSArray+QueryItemValue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+QueryItemValue.m"; sourceTree = "<group>"; };
 		710C105D1EC4C4690095BBF6 /* HTTPErrorResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTTPErrorResponse.h; sourceTree = "<group>"; };
 		710C105E1EC4C4690095BBF6 /* HTTPErrorResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTTPErrorResponse.m; sourceTree = "<group>"; };
+		710C10601EC64A890095BBF6 /* AFHTTPResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPResponse.h; sourceTree = "<group>"; };
+		710C10611EC64A890095BBF6 /* AFHTTPResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPResponse.m; sourceTree = "<group>"; };
 		963DB9886C4E98D72D4D2561 /* libPods-AirFox.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AirFox.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C232E86402DB9A7712C0F358 /* Pods-AirFox.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AirFox.release.xcconfig"; path = "Pods/Target Support Files/Pods-AirFox/Pods-AirFox.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -92,6 +95,8 @@
 				710C10551EC4B9320095BBF6 /* AFHTTPConnection.m */,
 				710C105A1EC4C0C90095BBF6 /* NSArray+QueryItemValue.h */,
 				710C105B1EC4C0C90095BBF6 /* NSArray+QueryItemValue.m */,
+				710C10601EC64A890095BBF6 /* AFHTTPResponse.h */,
+				710C10611EC64A890095BBF6 /* AFHTTPResponse.m */,
 				710C105D1EC4C4690095BBF6 /* HTTPErrorResponse.h */,
 				710C105E1EC4C4690095BBF6 /* HTTPErrorResponse.m */,
 				710C10461EC4B3410095BBF6 /* Assets.xcassets */,
@@ -235,6 +240,7 @@
 				710C10421EC4B3410095BBF6 /* main.m in Sources */,
 				710C105F1EC4C4690095BBF6 /* HTTPErrorResponse.m in Sources */,
 				710C105C1EC4C0C90095BBF6 /* NSArray+QueryItemValue.m in Sources */,
+				710C10621EC64A890095BBF6 /* AFHTTPResponse.m in Sources */,
 				710C103F1EC4B3410095BBF6 /* AppDelegate.m in Sources */,
 				710C10561EC4B9320095BBF6 /* AFHTTPConnection.m in Sources */,
 			);

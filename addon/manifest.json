@@ -5,14 +5,15 @@
 
   "description": "Share Firefox Tabs with the Native Sharing Sheet on macOS",
 
-  "background": {
-    "scripts": ["background.js"]
-  },
-
-  "permissions": ["activeTab", "storage", "notifications"],
+  "permissions": ["activeTab", "storage"],
 
   "options_ui": {
     "page": "options.html"
+  },
+
+  "icons": {
+    "48": "icons/icon@48.png",
+    "96": "icons/icon@96.png"
   },
 
   "commands": {
@@ -25,11 +26,11 @@
 
   "browser_action": {
     "default_icon": {
-      "16": "icons/page-16.png",
-      "32": "icons/page-32.png"
+      "16": "icons/icon@16.png",
+      "32": "icons/icon@32.png",
+      "64": "icons/icon@64.png"
     },
     "default_title": "AirFox",
     "default_popup": "pop.html"
   }
-
 }
