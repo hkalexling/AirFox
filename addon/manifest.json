@@ -3,9 +3,9 @@
   "name": "AirFox",
   "version": "1.0",
 
-  "description": "Share Firefox Tabs with the Native Sharing Sheet on macOS",
+  "description": "Share Firefox tabs with the native sharing sheet on macOS",
 
-  "permissions": ["activeTab", "storage"],
+  "permissions": ["tabs", "activeTab", "storage"],
 
   "options_ui": {
     "page": "options.html"
